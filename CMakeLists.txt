@@ -224,7 +224,7 @@ set(HAVE_JEMALLOC   ${JEMALLOC_FOUND})
 set(HAVE_SPDYLAY    ${SPDYLAY_FOUND})
 
 if(ENABLE_ASIO_LIB)
-  find_package(Boost 1.54.0 REQUIRED system thread)
+  find_package(Boost REQUIRED system thread)
 endif()
 
 # The nghttp, nghttpd and nghttpx under src depend on zlib, OpenSSL and libev
